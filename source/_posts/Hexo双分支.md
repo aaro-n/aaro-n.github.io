@@ -37,4 +37,4 @@ tags:
 
 # 参考链接
 
-* 利用Github分支备份Hexo博客源文件
+* [利用Github分支备份Hexo博客源文件](https://xiaovv.me/2017/04/14/%E5%88%A9%E7%94%A8Github%E5%88%86%E6%94%AF%E5%A4%87%E4%BB%BDHexo%E6%BA%90%E7%A0%81%E5%92%8C%E9%85%8D%E7%BD%AE/)
