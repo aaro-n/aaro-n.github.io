@@ -1,5 +1,6 @@
 ---
 title: Hexo操作指南
+date: 2019-03-16 06:54:28
 ---
 ## 原因
 本Hexo博客按照[教程](https://vanxnf.top/2018/09/01/Ubuntu-18.04-LTS-GitHub-Pages-Hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/)进行搭建，本文主要记录Hexo的操作命令
