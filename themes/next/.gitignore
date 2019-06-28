@@ -21,3 +21,5 @@ source/lib/font-awesome/scss/
 !source/lib/velocity/
 
 !source/lib/reading_progress/
+
+!source/lib/canvas-nest/

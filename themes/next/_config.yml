@@ -642,7 +642,7 @@ valine:
   pageSize: 10 # pagination size
   language: # language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-  comment_count: false # if false, comment count will only be displayed in post page, not in home page
+  comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -992,7 +992,7 @@ pace_theme: pace-theme-minimal
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest:
-  enable: false
+  enable: true
   onmobile: true # display on mobile or not
   color: "0,0,255" # RGB values, use ',' to separate
   opacity: 0.5 # the opacity of line: 0~1
@@ -1105,8 +1105,8 @@ vendors:
   # Example:
   # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
   # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
-  canvas_nest:
-  canvas_nest_nomobile:
+  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest.min.js
+  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js
 
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-three
