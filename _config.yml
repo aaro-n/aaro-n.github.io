@@ -13,9 +13,12 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://blog.itansuo.info
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :abbrlink.html
+abbrlink:
+  alg: crc32
+  rep: hex
 permalink_defaults:
 
 # Directory
@@ -88,5 +91,16 @@ search:
   field: post
   format: html
   limit: 10000
+
+# 网站地图
+## Googe
+sitemap:
+  path: sitemap.xml
+## 百度
+baidusitemap:
+  path: baidusitemap.xml
+
+# RSS输出
+plugins: hexo-generate-feed
 
 

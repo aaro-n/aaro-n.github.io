@@ -1,9 +1,10 @@
 ---
 title: Hexo优化
+tags:
+  - Hexo
+  - 优化
+abbrlink: 7b3ddb57
 date: 2019-02-16 06:54:28
-tags: 
-- Hexo
-- 优化
 ---
 
 ## 主要记录Hexo 的设置，以便恢复

@@ -1,5 +1,6 @@
 ---
 title: Hexo操作指南
+abbrlink: 4dd71e81
 date: 2019-03-16 06:54:28
 ---
 ## 原因

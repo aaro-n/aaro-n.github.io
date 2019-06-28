@@ -1,5 +1,6 @@
 ---
 title: Hexo双分支
+abbrlink: 780ce5b3
 date: 2019-06-25 06:10:56
 tags:
 ---
