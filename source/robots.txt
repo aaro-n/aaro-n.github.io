@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
-Allow: /archives/
+Disallow: /archives/
 Allow: /categories/
-Allow: /tags/ 
+Disallow: /tags/ 
 Allow: /resources/ 
 Disallow: /vendors/
 Disallow: /js/
@@ -10,7 +10,7 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
+Disallow: /atom.xml
 
 
-Sitemap: https://blog.itansuo.info/sitemap.xml
-Sitemap: https://blog.itansuo.info/baidusitemap.xml
+Sitemap: https://www.itansuo.info/sitemap.xml

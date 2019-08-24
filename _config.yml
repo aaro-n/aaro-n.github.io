@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 记录
-subtitle: 保存记录
-description:
+title: 探索世界
+subtitle: 探索世界，记录生活
+description: 记录生活，记录成长
 keywords:
 author: Aaron
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.itansuo.info
+url: https://www.itansuo.info
 root: /
 permalink: :abbrlink.html
 abbrlink:
@@ -96,9 +96,6 @@ search:
 ## Googe
 sitemap:
   path: sitemap.xml
-## 百度
-baidusitemap:
-  path: baidusitemap.xml
 
 # RSS输出
 plugins: hexo-generate-feed
