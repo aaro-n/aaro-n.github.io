@@ -1,19 +1,38 @@
-language: node_js
-node_js:
-  - '10'
+language: node_js   
 
-branches:
-  only:
-  - source
+node_js: '11'      
 
-before_install:
-- git config --global user.name "aaron"
-- git config --global user.email "qcqilin@gmail.com"
-- sed -i'' "s~https://github.com/aaro-n/aaro-n.github.io.git~https://${ACCESS_TOKEN}@github.com/aaro-n/aaro-n.github.io.git~" _config.yml
+branches:           
+  only: 
+    - source
 
-install:
-- npm install hexo-cli -g
-- npm install
+git:                
+  quite: true        
+  depth: 1           
+  submodules: true   
+
+cache: yarn          
+
+install: 
+  - yarn global add hexo-cli 
+  - yarn
 
 script:
-- npm run deploy
+  - hexo clean
+  - hexo generate
+
+deploy:              
+  provider: pages    
+  skip_cleanup: true 
+  github_token: $GITHUB_TOKEN  
+  keep_history: true 
+  repo: aaro-n/aaro-n.github.io.git
+  target-branch: master 
+  fqdn: tabris.top
+  local_dir: ./public
+  email: qcqilin@gmail.com
+  name: aaron
+  project_name: tabris_blog_travis-ci
+  on:                
+    branch: matery
+    all_branches: true
