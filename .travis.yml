@@ -1,38 +1,25 @@
-language: node_js   
+language: node_js
+node_js: stable
 
-node_js: '8'      
+cache:
+  directories:
+    - node_modules
 
-branches:           
-  only: 
-    - source
-
-git:                
-  quite: true        
-  depth: 1           
-  submodules: true   
-
-cache: yarn          
-
-install: 
-  - yarn global add hexo-cli 
-  - yarn
+install:
+  - npm install
 
 script:
-  - hexo clean
-  - hexo generate
+  - hexo g
 
-deploy:              
-  provider: pages    
-  skip_cleanup: true 
-  github_token: $GITHUB_TOKEN  
-  keep_history: true 
-  repo: aaro-n/aaro-n.github.io.git
-  target-branch: master 
-  fqdn: tabris.top
-  local_dir: ./public
-  email: qcqilin@gmail.com
-  name: aaron
-  project_name: tabris_blog_travis-ci
-  on:                
-    branch: matery
-    all_branches: true
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "aaron"
+  - git config user.email "qcqilin@gmail.com"
+  - git add .
+  - git commit -m "Update blog content by Travis CI"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
+branches:
+  only:
+    - source
