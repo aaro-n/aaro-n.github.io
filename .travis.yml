@@ -1,25 +1,19 @@
 language: node_js
-node_js: stable
-
-cache:
-  directories:
-    - node_modules
-
-install:
-  - npm install
-
-script:
-  - hexo g
-
-after_script:
-  - cd ./public
-  - git init
-  - git config user.name "aaron"
-  - git config user.email "qcqilin@outlook.com"
-  - git add .
-  - git commit -m "Update blog content by Travis CI"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+node_js:
+  - '10'
 
 branches:
   only:
-    - master
+  - source
+
+before_install:
+- git config --global user.name "aaron"
+- git config --global user.email "qcqilin@gmail.com"
+- sed -i'' "s~https://${9dc928ee9179586c10fb007af1be6f4d19fbdf6e}@github.com/aaro-n/aaro-n.github.io.git~" _config.yml
+
+install:
+- npm install hexo-cli -g
+- npm install
+
+script:
+- npm run deploy
